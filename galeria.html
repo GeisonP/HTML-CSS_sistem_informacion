@@ -4,8 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0.2rem 0.0rem 0.0rem 0.2rem;
+            background-color: #3A3A3A;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #encabezado{
+            display: flex;
+            height: 150px;
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        h1{
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        #fin{
+            display: flex;
+            justify-content: center;
+            background-color: #1F3E49;
+            height: 30px;
+            align-items: center;
+        }
+        h4{
+            color: white;
+        }
+        #titulo{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        #contenedor{
+            background:linear-gradient(#107FBF, #A8D2EB) ;
+        }
+        .imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        img {
+            width: 15%;
+            margin: 1%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a h2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <p>segunda pagina</p>
+    <header id="encabezado" src="img/0-img.jfif">
+        <div>
+            <h1>Lading Page de Deportes</h1>
+        </div>
+        <div>
+            <h2>¡Encuentra todo lo que necesitas para mantenerte activo!</h2> 
+        </div>
+    </header>
+    <header id="contenedor">
+        <div id="titulo">
+            <h2>Galeria de fotos</h2>
+        </div>
+        <div id="contendor-img" class="imagenes">
+            <img src="img/1-img.jfif">
+            <img src="img/2-img.jfif">
+        </div>
+        <div id="contenedor-img" class="imagenes">
+            <img src="img/3-img.jfif">
+            <img src="img/4-img.jfif">
+        </div>
+        <div>
+            <a href="index.html"><h2>Regresar</h2></a>
+        </div>
+    </header>
+    <footer>
+        <div id="fin">
+            <h4>© 2023  Landing Page Deportes</h4>
+        </div>
+    </footer>
 </body>
 </html>
